@@ -1,8 +1,11 @@
 # romainguy-optimization-pitfalls
+- [`the_path_not_taken.cpp`](the_path_not_taken.cpp): Branch prediction, conditional move instructions
+- [`you_are_going_to_need_it.cpp`](you_are_going_to_need_it.cpp): Preventing optimization
 
 ## References
 - https://www.romainguy.dev/posts/2024/the-path-not-taken/
 - https://www.romainguy.dev/posts/2024/you-are-going-to-need-it/
+- https://google.github.io/benchmark/user_guide.html
 
 ## Setup
 ```
