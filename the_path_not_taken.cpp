@@ -1,3 +1,5 @@
+// https://www.romainguy.dev/posts/2024/the-path-not-taken/
+
 #include <random>
 #include <vector>
 #include <benchmark/benchmark.h>
