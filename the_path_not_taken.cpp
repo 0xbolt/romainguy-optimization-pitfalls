@@ -75,7 +75,7 @@ BENCHMARK(BM_processPredictableDataBranchless)->Arg(1 << 16);
 BENCHMARK_MAIN();
 
 /*
--O3 Results:
+Compiler options: -O3 -ffast-math -march=native
 
 Benchmark                                          Time             CPU   Iterations
 ------------------------------------------------------------------------------------

@@ -42,28 +42,12 @@ static void BM_square(benchmark::State& state) {
     }
 }
 
-
 BENCHMARK(BM_pow2)->Arg(1 << 16);
 BENCHMARK(BM_square)->Arg(1 << 16);
 BENCHMARK_MAIN();
 
 /*
-Benchmark tests conducted on a Macbook M1 Pro.
-*/
-
-/*
--O0 Results:
-
-Benchmark                Time             CPU   Iterations
-----------------------------------------------------------
-BM_pow2/65536      1004531 ns      1000908 ns          709
-BM_square/65536     323714 ns       315099 ns         2255
-
-Assembly: https://godbolt.org/z/r3nasvY5T
-*/
-
-/*
--O3 Results:
+Compiler options: -O3 -ffast-math -march=native
 
 Benchmark                Time             CPU   Iterations
 ----------------------------------------------------------

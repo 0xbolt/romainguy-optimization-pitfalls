@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.27)
 project(RomainguyOptimizationPitfalls)
 
-set(CMAKE_CXX_)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
@@ -9,6 +8,13 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 add_subdirectory(googletest)
 include(GoogleTest)
 add_subdirectory(benchmark)
+
+add_compile_options(
+    $<$<CONFIG:Release>:-O3>
+    $<$<CONFIG:Release>:-ffast-math>
+    $<$<CONFIG:Release>:-march=native>
+    $<$<CONFIG:Release>:-flto>
+)
 
 add_executable(
     you_are_going_to_need_it

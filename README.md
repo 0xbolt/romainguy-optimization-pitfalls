@@ -1,6 +1,7 @@
 # romainguy-optimization-pitfalls
 - [`the_path_not_taken.cpp`](the_path_not_taken.cpp): Branch prediction, conditional move instructions
 - [`you_are_going_to_need_it.cpp`](you_are_going_to_need_it.cpp): Preventing optimization
+- [`aos_v_soa.cpp`](aos_v_soa.cpp): ...
 
 ## References
 - https://www.romainguy.dev/posts/2024/the-path-not-taken/
